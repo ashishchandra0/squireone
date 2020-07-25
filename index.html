@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container-white">
+        <header>
+            
+            <img src="image/squire_one_logo_11.png" alt="squire_one_logo" class="logo">
+            
+            
+            <nav>
+                <div class="show-desktop">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">event</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="hide-desktop">
+                    <a href="#"><img src="image/ham.svg" alt="" id="menu"></a>
+                    
+                        <ul class="menu-item" id="menu_item">
+                            <li class="exit-btn"><img src="image/exit.svg" alt="" id="exit" ></li>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">service</a></li>
+                            <li><a href="#">event</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                    
+                </div>
+            </nav>
+        </header>
+    </div>
+    <section>
+        <div class="social-media-logo">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/chandan.rajeev" target="_blank">
+                        <img src="image/facebook2.png" alt="F">
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="image/twitter2.png" alt="T">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/instagram2.png" alt="I">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/elyments3.png" alt="E">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="chat-box">
+            <img src="image/chat_icon1.png" alt="">
+        </div>
+        <h6 style="margin: 0; padding: 0; color:white">SquireOne Webpage</h6>
+        <img src="image/apartment1.jpg" alt="" class="apart-img">
+        <h2>Find your dream place</h2>
+        <p>Property to buy or rent</p>
+        <!-- <div class="design1">
+            
+        </div>
+        <div class="design2">
+        </div> -->
+        <div class="design1">
+            <div class="contact-us">
+               
+                <img src="image/contact_us_sketch.png" alt="">
+                <form onsubmit="return validation()" autocomplete="on" id="enq_form">
+                    <input type="text" placeholder="Name" class="contact-input" id="enq_name">
+                    <input type="email" placeholder="Email" class="contact-input" id="enq_email" required>
+                    <textarea placeholder="Message" class="contact-input" id="enq_message"></textarea >
+                    <input type="submit" value="Send it &#10148;" class="contact-send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+       
+        <div class="design3">
+            <img src="image/squire_one_logo_14.png" alt="" class="squire1logo">
+            <p>Gamma 1, Greater Noida - UP (India)</p>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script src="js/main.js"></script> 
+    <script src="js/firebase_database.js"></script> 
+
+</body>
+</html>

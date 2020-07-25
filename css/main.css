@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.container-white{
+    background:rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    
+}
+
+.logo{
+   width: 40%;
+}
+ 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#menu{
+    width: 25px;
+    margin-top: 45%;
+    margin-right: 10px;
+}
+
+.show-desktop{
+    display: none;
+}
+.hide-desktop ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    background: rgba(36, 41, 44, 0.911);
+    top: 0;
+    right: 0;
+    z-index: 7;
+}
+
+.hide-desktop ul a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgba(49, 55, 59, 0.911);
+}
+
+.hide-desktop ul a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn{
+    margin-bottom: 1em;
+    text-align: right;
+    margin-top: 1.3em;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+.menu-item{
+    display: none;
+}
+
+section{
+    padding-top: 19%;
+    text-align: center;
+    height: 100%;
+    display: block;
+
+}
+.design1{
+    background:rgb(176, 177, 171);
+    border-top-right-radius: 40px;
+    padding-bottom: 2em;
+}
+.design2{
+    background: white;
+    border-top-right-radius: 40px;
+    height: 25em;
+    margin-top: -2em;
+    margin-bottom: -2em;
+}
+.design3{
+    background: rgb(0, 0, 0);
+    border-top-right-radius: 40px; 
+    margin-top: -2em;
+    padding-bottom: 1em;
+}
+.apart-img{
+    width: 70%;
+}
+footer{
+    text-align: center;
+    color: rgb(173, 169, 169);
+}
+.squire1logo{
+    margin-top: 0.5em;
+    width: 35%;
+}
+
+footer ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: inline-flex;
+}
+footer ul li a{
+    font-size: .6em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: rgb(211, 199, 199);
+}
+footer p{
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0.5em;
+}
+
+.social-media-logo{
+    position: fixed;
+    color: red;
+    margin-top: 20em;
+}
+.social-media-logo ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+.social-media-logo img{
+    width: 2em;
+    margin: 0.2em 0 0.2em 0;
+}
+
+.social-media-logo img:hover{
+    margin-left: 0.2em;
+}
+.social-media-logo ul:hover{
+    padding-left: 0.2em;
+} 
+.chat-box{
+    position: fixed;
+    text-align: right;
+    margin-top: 32em;
+    width: 100%;
+
+}
+.chat-box img{
+    width: 3em;
+    border-radius: 40%;
+    border-style: outset;
+    border-color: white;
+    margin-right: 0.5em;
+}
+
+.chat-box img:hover{
+    border-color: black;
+    
+}
+
+.contact-us img{
+    width: 10em;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: rgba(36, 41, 44, 0.911);
+    margin: 0 2.5em 1em 2.5em;
+    border-top-right-radius: 20px;
+}
+.contact-input{
+    margin: 0.8em 0;
+    border: 0px;
+    border-bottom: 1px solid #c5ecfd;
+    background: transparent;
+    color: rgb(184, 175, 175);
+    
+}
+.contact-us textarea{
+    height: 4em;
+}
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+    font-family: sans-serif;
+}
+
+.contact-send{
+    background: black;
+    color:#c5ecfd;
+    height: 2em;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid #c5ecfd;
+}
+.contact-send:hover{
+    border: 1px solid #c5ecfd63;
+}
+
+.contact-input:hover{
+    border-bottom: 1px solid #c5ecfd63;
+}
+/* -------------------------------550px------------------------------- */
+
+@media only screen and (min-width: 550px)  {
+    .logo{
+        width: 30%;
+     }
+
+     .apart-img{
+        width: 50%;
+    }
+    .squire1logo{
+        width: 25%;
+
+    }
+
+    .contact-us form{
+        margin: 0 6em 1em 6em;
+    }
+    
+
+    
+}
+
+@media only screen and (min-width: 800px)  {
+    .logo{
+        width: 20%;
+        
+     }
+     body{
+         margin-left: 1em;
+         margin-right: 1em;
+     }
+     
+     .container-white{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+     }
+
+     .apart-img{
+        width: 40%;
+    }
+
+    section{
+        padding-top: 10%;
+    }
+
+    .squire1logo{
+        width: 15%;
+
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .show-desktop{
+        display: initial;
+        
+    }
+    .show-desktop ul{
+        list-style-type: none;
+        display: inline-flex;
+    }
+    .show-desktop ul li{
+        padding-right: 2em;
+        padding-top: 0.5em;
+    }
+
+    .show-desktop ul li a{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9em;
+        color:rgb(105, 101, 101);
+    }
+
+    .show-desktop ul li a:hover{
+        color: black;
+    }
+
+    .social-media-logo{
+        margin-left: -1em;
+    }
+
+    .social-media-logo img{
+        width: 2em;
+    }
+
+    .chat-box img{
+        margin-right: 2.5em;
+        margin-top: 1.5em;
+    }
+
+    .contact-us form{
+        margin: 0 12em 1em 12em;
+    }
+    
+}
+
+@media only screen and (min-width: 1200px)  {
+    .logo{
+        width: 12%;
+        padding-left: 1em;
+     }
+     body{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .container-white{
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+     }
+     .apart-img{
+        width: 35%;
+    }
+
+    .squire1logo{
+        width: 10%;
+
+    }
+
+    .show-desktop ul li{
+        padding-right: 4em;
+    }
+    
+    .social-media-logo img{
+        width: 2.5em;
+    }
+    
+
+    .contact-us{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 1em;
+    }
+    .contact-us form{
+        margin: 1em 0 1em 0.5em;
+        width: 25em;
+    }
+    .contact-us img{
+        width: auto;
+    }
+    
+}

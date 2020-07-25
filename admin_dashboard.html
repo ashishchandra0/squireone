@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <script>
+        console.log(localStorage.getItem("sessionId"));
+        if(localStorage.getItem("sessionId")==null){
+            alert("not loged in");
+            window.open('admin.html',"_self");
+        }
+        
+
+        
+        
+    </script>
+    <style>
+        .entry{
+            background: green; 
+            color: white;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="logout()">log out</button>
+    <!-- <div id="output">
+        dashboard
+        
+    </div> -->
+    
+    <table border="1px" id="tab">
+        
+    </table>
+
+    <div id="enq_entries" style="display: flex; flex-direction: column;">
+        
+       
+    </div>
+
+
+    <!-- <input type="button" value="dk" onclick="retriveFormFirebase()"> -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase_database.js"></script>
+    <script src="js/admin.js"></script>
+
+    <script>
+        function logout(){
+            localStorage.clear();
+            location.replace("admin.html");
+        }
+    </script>
+</body>
+
+</html>
